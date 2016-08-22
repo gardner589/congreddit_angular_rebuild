@@ -1,0 +1,17 @@
+<div class="legshow">
+  <a ui-sref="index">
+  <h4>Main Page</h4>
+  </a>
+  <div class="persn">
+    <h1>{{legislator.legislator.first_name}} {{ }} {{legislator.legislator.last_name}}</h1>
+    <p>{{legislator.legislator.chamber}}</p><p>{{legislator.legislator.party}}</p>
+    <hr>
+  </div>
+  <div class="history" ng-repeat="obj in votes">
+    <p>
+      {{obj.vote}}
+      <hr>
+       {{obj.bill_title}}
+    </p>
+  </div>
+</div>

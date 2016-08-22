@@ -1,0 +1,10 @@
+<h1>Legislators</h1><input ng-model="search"/>
+<div class="container">
+    <div class="ppl" ng-repeat="person in legislators | filter: search">
+      <a ui-sref="show({id: person.id})">
+      <h3>{{person.first_name}} {{ }} {{person.last_name}}</h3>
+      <p>Party: {{person.party}}</p>
+      <p>{{person.chamber}}</p>
+      </a>
+    </div>
+</div>
