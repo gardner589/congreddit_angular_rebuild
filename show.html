@@ -4,7 +4,7 @@
   </a>
   <div class="persn">
     <h1>{{legislator.legislator.first_name}} {{ }} {{legislator.legislator.last_name}}</h1>
-    <p>{{legislator.legislator.chamber}}</p><p>{{legislator.legislator.party}}</p>
+    <p>{{legislator.legislator.chamber | uppercase}}</p><p>{{legislator.legislator.party}}</p>
     <hr>
   </div>
     <h4>Keywords: <input type="text" label="Keyword" name="search" ng-model="billFilter"></h4>
@@ -12,7 +12,9 @@
     <p>
       {{obj.vote}}
       <hr>
-       {{obj.bill_title}}
+      <p>
+        {{obj.bill_title}}
+      </p>
     </p>
   </div>
 </div>
