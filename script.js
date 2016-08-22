@@ -14,7 +14,7 @@ app.config(["$stateProvider", function($stateProvider){
 }])
 
 app.factory("factry",["$resource", function($resource){
-  return $resource('http://localhost:3000/legislators/:id', {}, {
+  return $resource('https://thawing-island-32605.herokuapp.com/legislators/:id', {}, {
     update: {method: 'PUT'}
   })
 }])
