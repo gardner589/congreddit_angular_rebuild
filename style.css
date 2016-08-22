@@ -11,7 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url('http://m.rgbimg.com/cache1yDQM0/users/x/xy/xymonau/600/p8KLb1g.jpg') fixed;
+  background: url('papyrus.jpg') fixed;
 }
 header{
   top: 0;
@@ -25,7 +25,7 @@ header{
   text-align: center;
   color: white;
   border-radius: 15px;
-  background: url('http://bridge.georgetown.edu/wp-content/uploads/2015/05/o-CAPITOL-DOME-FLAG-facebook.jpg') fixed;
+  background: url('CAPITOL-DOME-FLAG.jpg') fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
