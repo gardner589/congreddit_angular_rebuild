@@ -7,7 +7,8 @@
     <p>{{legislator.legislator.chamber}}</p><p>{{legislator.legislator.party}}</p>
     <hr>
   </div>
-  <div class="history" ng-repeat="obj in votes">
+    <h4>Keywords: <input type="text" label="Keyword" name="search" ng-model="billFilter"></h4>
+  <div class="history" ng-repeat="obj in votes | filter: billFilter">
     <p>
       {{obj.vote}}
       <hr>
