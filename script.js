@@ -11,6 +11,10 @@ app.config(["$stateProvider", function($stateProvider){
     templateUrl: "./show.html",
     controller: "legislatorShow"
   })
+  .state("mainPage",{
+    url: "/",
+    templateUrl: "./mainPage.html"
+  })
 }])
 
 app.factory("factry",["$resource", function($resource){

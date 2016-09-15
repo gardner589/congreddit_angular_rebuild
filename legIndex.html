@@ -1,4 +1,4 @@
-<h1>Legislators</h1><input ng-model="search"/>
+<h1>Legislators</h1><input placeholder='Search legislators' ng-model="search"/>
 <div class="container">
     <div class="ppl" ng-repeat="person in legislators | filter: search">
       <a ui-sref="show({id: person.id})">

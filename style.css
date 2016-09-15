@@ -44,6 +44,35 @@ a:visited{
   flex-direction: row;
   flex-wrap: wrap;
 }
+.mainPageText{
+  position: absolute;
+  width: 80%;
+  border: .5px outset #d9edf7;
+  /*margin: auto;*/
+  left: 10%;
+  top: 55%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 0 2px 50px 5px black;
+  background: url('') fixed;
+  color: black;
+  text-align: center;
+}
+.mainPageText button{
+  width: 20%;
+  height: 2em;
+  background: linear-gradient(to top, green,white);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 1px black;
+
+}
+.mainPageText button:hover{
+  box-shadow: none ;
+  background: #57AB57;
+  color: white;
+  border: .5px solid white;
+}
 /*.ppl:nth-child(odd){
   background: #334555;
 }*/
