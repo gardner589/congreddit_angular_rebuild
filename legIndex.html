@@ -1,10 +1,21 @@
 <h1>Legislators</h1><input placeholder='Search legislators' ng-model="search"/>
 <div class="container">
     <div class="ppl" ng-repeat="person in legislators | filter: search">
-      <a ui-sref="show({id: person.id})">
+
+      <div ng-if="person.party == 'D'" class="dems" ui-sref="show({id: person.id})">
       <h3>{{person.first_name}} {{ }} {{person.last_name}}</h3>
-      <p>Party: {{person.party}}</p>
-      <p>{{person.chamber | uppercase}}</p>
-      </a>
+      <p>Party: Democrat</p>
+      <p>State: {{person.state}}</p>
+      <p>District: {{person.district}}</p>
+      <p>Chamber: {{person.chamber | uppercase}}</p>
+    </div>
+
+      <div ng-if="person.party == 'R'" class="reps" ui-sref="show({id: person.id})">
+      <h3>{{person.first_name}} {{ }} {{person.last_name}}</h3>
+      <p>Party: Republican</p>
+      <p>State: {{person.state}}</p>
+      <p>District: {{person.district}}</p>
+      <p>Chamber: {{person.chamber | uppercase}}</p>
+    </div>
     </div>
 </div>

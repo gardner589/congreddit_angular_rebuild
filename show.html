@@ -4,7 +4,8 @@
   </a>
   <div class="persn">
     <h1>{{legislator.legislator.first_name}} {{ }} {{legislator.legislator.last_name}}</h1>
-    <p>{{legislator.legislator.chamber | uppercase}}</p><p>{{legislator.legislator.party}}</p>
+    <p>{{legislator.legislator.state}} - District: {{legislator.legislator.district}}</p>
+    <p>{{legislator.legislator.chamber | uppercase}}</p><p ng-if="legislator.legislator.party == 'R'">Republican</p><p ng-if="legislator.legislator.party == 'D'">Democrat</p>
     <hr>
   </div>
     <h4>Keywords: <input type="text" label="Keyword" name="search" ng-model="billFilter"></h4>
