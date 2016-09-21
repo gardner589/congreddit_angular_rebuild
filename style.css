@@ -50,19 +50,21 @@ a:visited{
 .mainPageText{
   position: absolute;
   width: 80%;
-  border: .5px outset #d9edf7;
-  /*margin: auto;*/
+  /*border: .5px outset #d9edf7;*/
   left: 10%;
-  top: 55%;
+  margin-top: 10em;
   padding: 2%;
-  border-radius: 15px;
-  box-shadow: 0 2px 50px 5px black;
-  background: url('') fixed;
+  /*border-radius: 15px;*/
+  /*box-shadow: 0 2px 50px 5px black;*/
   color: black;
   text-align: center;
 }
+.mainPageText img{
+  border-radius: 50%;
+  /*box-shadow: 0 2px 35px 5px black;*/
+}
 .mainPageText button{
-  width: 20%;
+  /*width: 20%;*/
   height: 2em;
   background: linear-gradient(to top, green,white);
   border: none;
@@ -78,29 +80,16 @@ a:visited{
 }
 .reps{
   color: maroon;
-  /*background: url('Rep.jpg') fixed;
-  background-repeat: no-repeat;
-  background-size: cover;*/
 }
 .dems{
   color: navy;
-  /*background: url('Dem.png') fixed;
-  background-repeat: no-repeat;
-  background-size: cover;*/
 }
 .ppl{
-  /*width: 60%;*/
-  /*border: .5px outset #d9edf7;*/
-  /*padding: 5%;*/
-  /*background-color: rgba(15, 15,0,0.1);*/
-  /*border-right: .5px solid #ccc;*/
-  /*border-bottom: .5px solid #ccc;*/
+  padding: 2%;
   margin: 2%;
-  /*border-radius: 15px;*/
-  /*box-shadow: 0 2px 50px 5px black;*/
+
 }
 .ppl:hover{
-  box-shadow: none;
   border: .5px inset #d9edf7;
   cursor: pointer;
 }
