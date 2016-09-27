@@ -1,21 +1,33 @@
-<div class="legshow">
-  <a ui-sref="index">
-  <h4>Main Page</h4>
-  </a>
+<div class="legshow" ng-controller="legislatorShow">
+  <!-- <a ui-sref="index">
+  <h2>[+]Main Page[+]</h2>
+  </a> -->
   <div class="persn">
     <h1>{{legislator.legislator.first_name}} {{ }} {{legislator.legislator.last_name}}</h1>
     <p>{{legislator.legislator.state}} - District: {{legislator.legislator.district}}</p>
     <p>{{legislator.legislator.chamber | uppercase}}</p><p ng-if="legislator.legislator.party == 'R'">Republican</p><p ng-if="legislator.legislator.party == 'D'">Democrat</p>
+    <!-- <button type="button" ng-click="switch()" name="button">Vote History</button> -->
+    <!-- <button type="button" ng-click="comments()" name="button">Comments</button> -->
+
     <hr>
+    <h4>Keywords: <input type="text" label="Keyword" name="search" ng-model="Filter"></h4>
   </div>
-    <h4>Keywords: <input type="text" label="Keyword" name="search" ng-model="billFilter"></h4>
-  <div class="history" ng-repeat="obj in votes | filter: billFilter">
-    <p>
-      {{obj.vote}}
-      <hr>
+    <!-- <div ng-if="Hascomments" class="comments" >
+      <table>
+        <tr ng-repeat="comment in legislator.comments">
+           {{comment}}
+        </tr>
+      </table>
+    </div> -->
+      <a  ui-sref="billShow({id: obj.bill_id})" ng-repeat="obj in votes | filter: Filter">
+        <div class="history">
       <p>
-        {{obj.bill_title}}
+         I voted '{{obj.vote}}'
+        <hr>
+        <p>
+          {{obj.bill_title}}
+        </p>
       </p>
-    </p>
-  </div>
+    </div>
+    </a>
 </div>

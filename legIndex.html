@@ -1,4 +1,6 @@
-<h1>Legislators</h1> Fliter: <input placeholder='Search List' ng-model="search"/>
+<div class="filter">
+  <h1>Legislators</h1> <br/><input placeholder='Search List' ng-model="search"/>
+</div>
 <div class="container">
     <div class="ppl" ng-repeat="person in legislators | filter: search">
 

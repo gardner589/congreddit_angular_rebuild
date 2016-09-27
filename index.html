@@ -10,9 +10,14 @@
   </head>
   <body>
     <header>
-      <h2>Congreddit</h2>
+      <a ui-sref="index">
+        <h2>Congreddit</h2>
+    </a>
     </header>
     <main ui-view></main>
+    <div ui-view="partial"></div>
+    <div ui-view="main">
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
