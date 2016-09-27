@@ -31,7 +31,7 @@ header{
   text-align: center;
   color: white;
   position: fixed;
-  padding-top: 5%;
+  padding-top: 3%;
   background: url('CAPITOL-DOME-FLAG.jpg') fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,7 +69,7 @@ a:visited{
   justify-content: center;
   text-align: center;
   color: white;
-  margin-top: 15em;
+  margin-top: 18em;
   margin-bottom: 0;
   padding: 0;
 
@@ -141,7 +141,7 @@ a:visited{
   /*position: absolute;*/
   width: 85%;
   text-align: center;
-  margin-top: 15em;
+  margin-top: 18em;
   color: white;
 }
 
