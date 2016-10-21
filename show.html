@@ -2,7 +2,7 @@
   <!-- <a ui-sref="index">
   <h2>[+]Main Page[+]</h2>
   </a> -->
-  <div class="persn">
+  <div class="container-fluid text-center">
     <h1>{{legislator.legislator.first_name}} {{ }} {{legislator.legislator.last_name}}</h1>
     <p>{{legislator.legislator.state}} - District: {{legislator.legislator.district}}</p>
     <p>{{legislator.legislator.chamber | uppercase}}</p><p ng-if="legislator.legislator.party == 'R'">Republican</p><p ng-if="legislator.legislator.party == 'D'">Democrat</p>
@@ -19,9 +19,22 @@
         </tr>
       </table>
     </div> -->
-      <a  ui-sref="billShow({id: obj.bill_id})" ng-repeat="obj in votes | filter: Filter">
-        <div class="history">
-          <p> I voted '{{obj.vote}}',  {{obj.bill_title}}</p>
+      <a class="col-md-6 " ui-sref="billShow({id: obj.bill_id})" ng-repeat="obj in votes | filter: Filter">
+        <div ng-if="obj.vote == 'Yea'" class="panel panel-success">
+          <div class="panel-heading">
+            <p> I voted '{{obj.vote}}'</p>
+          </div>
+          <div class="panel-body">
+            <p> {{obj.bill_title}}</p>
+          </div>
+        </div>
+        <div ng-if="obj.vote == 'Nay'" class="panel panel-danger">
+          <div class="panel-heading">
+            <p> I voted '{{obj.vote}}'</p>
+          </div>
+          <div class="panel-body">
+            <p> {{obj.bill_title}}</p>
+          </div>
         </div>
     </a>
 </div>

@@ -6,13 +6,18 @@ body{
 
 header{
   background: url('CAPITOL-DOME-FLAG.jpg') fixed;
-  /*background-size: cover;*/
   font-size: 3em;
-}
-header a{
-  text-decoration: none;
   color: white;
 }
+/*a{
+  text-decoration: none;
+}
+a:link{
+  text-decoration: none;
+  color: inherit;
+}*/
+
+
 .dems:hover{
   cursor: pointer;
 }
