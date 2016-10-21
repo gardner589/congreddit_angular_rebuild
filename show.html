@@ -21,13 +21,7 @@
     </div> -->
       <a  ui-sref="billShow({id: obj.bill_id})" ng-repeat="obj in votes | filter: Filter">
         <div class="history">
-      <p>
-         I voted '{{obj.vote}}'
-        <hr>
-        <p>
-          {{obj.bill_title}}
-        </p>
-      </p>
-    </div>
+          <p> I voted '{{obj.vote}}',  {{obj.bill_title}}</p>
+        </div>
     </a>
 </div>
