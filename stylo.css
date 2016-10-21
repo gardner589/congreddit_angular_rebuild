@@ -1,0 +1,22 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+body{
+  font-family: Raleway;
+}
+
+header{
+  background: url('CAPITOL-DOME-FLAG.jpg') fixed;
+  /*background-size: cover;*/
+  font-size: 3em;
+}
+header a{
+  text-decoration: none;
+  color: white;
+}
+.dems:hover{
+  cursor: pointer;
+}
+
+.reps:hover{
+  cursor: pointer;
+}
