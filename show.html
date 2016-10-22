@@ -10,7 +10,7 @@
     <!-- <button type="button" ng-click="comments()" name="button">Comments</button> -->
 
     <hr>
-    <h4>Keywords: <input type="text" label="Keyword" name="search" ng-model="Filter"></h4>
+    <h4>Keywords: <input type="text" label="Keyword" placeholder="Search by keywords.." name="search" ng-model="Filter"></h4>
   </div>
     <!-- <div ng-if="Hascomments" class="comments" >
       <table>
@@ -19,7 +19,8 @@
         </tr>
       </table>
     </div> -->
-      <a class="col-md-6 " ui-sref="billShow({id: obj.bill_id})" ng-repeat="obj in votes | filter: Filter">
+
+      <a class="col-md-6" ui-sref="billShow({id: obj.bill_id})" ng-repeat="obj in votes | filter: Filter">
         <div ng-if="obj.vote == 'Yea'" class="panel panel-success">
           <div class="panel-heading">
             <p> I voted '{{obj.vote}}'</p>

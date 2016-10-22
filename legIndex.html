@@ -1,5 +1,9 @@
-<div class="container-fluid text-center">
-  <h1>Legislators</h1> <br/><input placeholder='Search List' ng-model="search"/>
+<div class="container-fluid text-center search">
+  <h1>Legislators</h1>
+  <br/>
+  <h4>
+    Keywords: <input placeholder='Search by keywords..' ng-model="search"/>
+  </h4>
 </div>
 <div class="container">
     <div class="col-md-6" ng-repeat="person in legislators | filter: search">

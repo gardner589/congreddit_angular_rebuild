@@ -1,10 +1,11 @@
-<div class="billShow">
-  <h1 >
-    Bill Sponsor: {{sponsor.first_name}} {{sponsor.last_name}} ({{sponsor.title}})
-  </h1>
-  <div>
-    <h2>{{bill.official_title}}</h2>
-    <hr>
+<div class="container text-center">
+  <div class="panel panel-default">
+    <div>
+      <h4>
+        Bill Sponsor: {{sponsor.first_name}} {{sponsor.last_name}} ({{sponsor.title}})
+      </h4>
+      <p>{{bill.official_title}}</p>
+      <a ng-href="{{pdf.urls.pdf}}" target="_blank"><h2>View PDF</h2></a>
+    </div>
   </div>
-  <a ng-href="{{pdf.urls.pdf}}" target="_blank"><h2>View PDF</h2></a>
 </div>
